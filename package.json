@@ -50,6 +50,6 @@
     "react-test-renderer": "^16.13.1",
     "webpack": "^4.44.2",
     "webpack-dev-server": "^3.11.0",
-    "xml-js": "^1.6.11",
+    "xml-js": "^1.6.11"
   }
 }
