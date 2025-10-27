@@ -1,12 +1,77 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+/* styles.css - basic clean layout */
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+:root {
+  --gap: 10px;
+  --bg: #f5f7fb;
+  --box-bg: #ffffff;
+  --border: #ddd;
+  --radius: 8px;
 }
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+}
+
+.app {
+  height: 100vh;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+/* Left side: textarea (class name required for tests) */
+.textarea {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--box-bg);
+  resize: none; /* prevent drag resize (optional) */
+  outline: none;
+}
+
+/* wrapper for right side so we can show loading above preview */
+.preview-wrapper {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: var(--gap);
+  display: flex;
+  flex-direction: column;
+}
+
+/* loading indicator (class name required for tests) */
+.loading {
+  padding: 8px 10px;
+  background: #fff9db;
+  border: 1px solid #f0e2a6;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* preview area (class name required for tests) */
+.preview {
+  background: var(--box-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* small nicer markdown styles */
+.preview h1 { font-size: 1.6rem; margin: 0 0 0.5rem 0; }
+.preview h2 { font-size: 1.3rem; margin: 0 0 0.4rem 0; }
+.preview p  { margin: 0 0 0.6rem 0; }
+.preview ul { padding-left: 1.2rem; margin: 0 0 0.6rem 0; }
+.preview ol { padding-left: 1.2rem; margin: 0 0 0.6rem 0; }
+.preview code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+.preview pre { background: #272822; color: #f8f8f2; padding: 8px; border-radius: 6px; overflow: auto; }
