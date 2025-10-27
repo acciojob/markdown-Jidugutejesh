@@ -51,7 +51,5 @@
     "webpack": "^4.44.2",
     "webpack-dev-server": "^3.11.0",
     "xml-js": "^1.6.11",
-        "react-markdown": "^10.1.0",
-
   }
 }
