@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 /*
   - textarea className must be "textarea"
   - preview className must be "preview"
-  - loading indicator className must be "loading"
+  - loading indicator className must be "loading 
   This component uses:
     - text: current typed text (two-way binding with textarea)
     - preview: what we render (updated via useEffect)
